@@ -1,10 +1,12 @@
 # log for 6hqv simulation 
-- 6hqv.pdb 
-- missing residue
-
+- 6hqv_A.pdb  (pdbfixer, select chain A, add missing atom)
+- 6hqv_het.pdb ( add hydrogen)
+- 6hqv_water.pdb ( add water 0.1nm) 
 
 ## exp01 1ns MD simulation to fix missing atom
-- 310 Kelvin, add solvent(water)
+- load 6hqv_het.pdb
+- add water 
+- set 310 Kelvin
 - initialize topo
 - trajectory (csv, PDB)
 - finalize  topo
